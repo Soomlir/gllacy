@@ -1,18 +1,26 @@
+<script setup>
+import HeaderBlock from "./components/HeaderBlock.vue";
+import PromoBlock from "./components/PromoBlock.vue";
+import ProposalBlock from "./components/ProposalBlock.vue";
+import AssortmentBlock from "./components/AssortmentBlock.vue";
+import AboutBlock from "./components/AboutBlock.vue";
+import OrderBlock from "./components/OrderBlock.vue";
+import ContactsBlock from "./components/ContactsBlock.vue";
+import FooterBlock from "./components/FooterBlock.vue";
+</script>
+
 <template>
-  <div class="app">
-    <main class="app__main">Hello world!</main>
-  </div>
+  <HeaderBlock />
+  <main class="main">
+    <h1 class="visually-hidden">Gllacy Shop</h1>
+    <PromoBlock />
+    <ProposalBlock />
+    <AssortmentBlock />
+    <AboutBlock />
+    <OrderBlock />
+    <ContactsBlock />
+  </main>
+  <FooterBlock />
 </template>
 
-<style lang="scss" scoped>
-.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow: hidden scroll;
-}
-
-.app__main {
-  flex-grow: 1;
-}
-</style>
+<style scoped></style>
