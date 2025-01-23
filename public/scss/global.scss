@@ -1,0 +1,22 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Inter";
+  font-style: normal;
+  font-display: swap;
+  src: local("Inter"), url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Inter";
+  font-style: normal;
+  font-display: swap;
+  src: local("Inter"), url("../fonts/Inter-Bold.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
