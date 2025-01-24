@@ -14,9 +14,21 @@
   src: local("Inter"), url("../fonts/Inter-Bold.woff2") format("woff2");
 }
 
+@font-face {
+  font-weight: 900;
+  font-family: "Inter";
+  font-style: normal;
+  font-display: swap;
+  src: local("Inter"), url("../fonts/Inter-Black.woff2") format("woff2");
+}
+
 body {
   margin: 0;
-  max-width: 1366px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #FCC850;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+.visually-hidden {
+	position: fixed;
+	transform: scale(0);
 }
