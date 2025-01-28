@@ -3,7 +3,7 @@
   font-family: "Inter";
   font-style: normal;
   font-display: swap;
-  src: local("Inter"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  src: local("Inter"), url("/fonts/Inter-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-family: "Inter";
   font-style: normal;
   font-display: swap;
-  src: local("Inter"), url("../fonts/Inter-Bold.woff2") format("woff2");
+  src: local("Inter"), url("/fonts/Inter-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-family: "Inter";
   font-style: normal;
   font-display: swap;
-  src: local("Inter"), url("../fonts/Inter-Black.woff2") format("woff2");
+  src: local("Inter"), url("/fonts/Inter-Black.woff2") format("woff2");
 }
 
 body {
