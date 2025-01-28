@@ -57,10 +57,11 @@ img {
   margin-right: auto;
   margin-left: auto;
   border-radius: 16px;
-  border: 24px solid #ececec;
-  background-color: #ececec;
-  box-sizing: border-box;
   margin-bottom: 80px;
+  box-sizing: border-box;
+  padding: 24px;
+  background-image: url("../images/about-bg.jpg");
+
 }
 
 .about__wrap {

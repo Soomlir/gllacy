@@ -47,23 +47,15 @@ const socialData = [
   <section class="promo">
     <h2 class="visually-hidden">Промо слайдер - Gllacy</h2>
     <ul class="promo__slider">
-      <li
-        class="promo__item"
-        v-for="{ id, heading, text, img } in sliderData"
-        :key="id"
-      >
+      <li class="promo__item" v-for="{ id, heading, text, img } in sliderData" :key="id">
         <div class="promo__info">
           <h3 class="promo__heading">{{ heading }}</h3>
           <p class="promo__text">{{ text }}</p>
           <a class="promo__button" href="#!">Заказать</a>
         </div>
-
-        <img
-          :src="img.src"
-          :width="img.width"
-          :height="img.height"
-          :alt="img.alt"
-        />
+        <picture class="promo__picture">
+          <img :src="img.src" :width="img.width" :height="img.height" :alt="img.alt" />
+        </picture>
         <button class="promo__prev">
           <span class="visually-hidden">Предыдущий слайд.</span>
         </button>
@@ -76,7 +68,7 @@ const socialData = [
       <div class="promo__controls">
         <input class="promo__radio" type="radio" />
         <input class="promo__radio" type="radio" />
-        <input class="promo__radio" type="radio" />
+        <input class="promo__radio promo__radio--current" type="radio" />
       </div>
       <div class="promo__social social">
         <ul class="social__list">
@@ -160,35 +152,69 @@ img {
   padding: 12px 32px;
   border-radius: 22px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  font-family: inherit;
+  box-shadow: 0 0 0 4px hsla(0, 0%, 99%, .4), 0 4px 12px rgba(45, 52, 64, .1);
+}
+
+.promo__picture {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    width: 312px;
+    height: 312px;
+    background-color: #FCDC92;
+    content: "";
+    z-index: -1;
+    border-radius: 50%;
+    top: 98px;
+    left: 19px;
+  }
 }
 
 .promo__prev,
 .promo__next {
   position: absolute;
+  display: flex;
   width: 38px;
   height: 38px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 50%;
-  border: 1px solid rgba(252, 252, 252, 0.3);
+  border: 2px solid #fcfcfc;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .promo__prev {
   right: 590px;
   top: 258px;
 
+
   &::before {
+    position: absolute;
     content: "";
     width: 16px;
     height: 16px;
-    top: 0;
-    left: 0;
-    background-image: url("../../images/aarrow-left.svg");
+    margin: auto;
+    background-image: url("../images/arrow-left.svg");
   }
 }
 
 .promo__next {
   right: 278px;
   top: 258px;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin: auto;
+    background-image: url("../images/arrow-left.svg");
+    transform: scaleX(-1);
+  }
 }
 
 .promo__bottom {
@@ -206,10 +232,20 @@ img {
   height: 12px;
   appearance: none;
   border-radius: 50%;
-  background-color: #fcfcfc;
+  background-color: #FCFCFC;
   margin: 0;
   padding: 0;
   margin-right: 8px;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &--current {
+    opacity: 1;
+  }
+
+  &:hover {
+
+  }
 }
 
 .social__list {
@@ -226,5 +262,6 @@ img {
   background-color: #FCFCFC;
   border-radius: 50%;
   margin-left: 16px;
+  box-shadow: 0 0 0 2px hsla(0,0%,99%,.3);
 }
 </style>

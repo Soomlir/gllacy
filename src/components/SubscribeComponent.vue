@@ -9,16 +9,18 @@
         10 способов сервировки фруктовых щербетов к столу
       </h3>
     </article>
-    <div class="subscribe__form-wrap form-wrap">
-      <p class="form-wrap__text">
-        Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
-        самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-        всякой ненужной ерунды. Честно =)
-      </p>
-      <form class="subscribe__form" action="/" method="post">
-        <input class="subscribe__input" type="email" name="email" placeholder="email@example.com" />
-        <button class="subscribe__button" type="submit">Отправить</button>
-      </form>
+    <div class="subscribe__form-wrap">
+      <div class="subscribe__content content">
+        <p class="content__text">
+          Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
+          самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+          всякой ненужной ерунды. Честно =)
+        </p>
+        <form class="subscribe__form" action="/" method="post">
+          <input class="subscribe__input" type="email" name="email" placeholder="email@example.com" />
+          <button class="subscribe__button" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </section>
 </template>
@@ -74,46 +76,52 @@ img {
   width: 570px;
   background-color: #ffffff;
   border-radius: 16px;
-  border: 6px solid #e2e2e2;
+  padding: 6px;
+  background-image: url("../images/subscribe-bg.jpg");
 }
 
-.form-wrap__text {
-    color: #565C66;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 26px 26px 43px 26px;
-    margin: 0;
+.content {
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.content__text {
+  color: #565C66;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 26px 26px 43px 26px;
+  margin: 0;
 }
 
 .subscribe__form {
-    padding: 0 26px 26px 26px;
+  padding: 0 26px 29px 26px;
 }
 
 .subscribe__input {
-    width: 332px;
-    height: 48px;
-    margin: 0;
-    padding: 0;
-    border-radius: 4px;
-    border: 1px solid #B9B9B9;
-    color: #B9B9B9;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 14px 16px;
-    box-sizing: border-box;
-    margin-right: 18px;
+  width: 332px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  border: 1px solid #B9B9B9;
+  color: #B9B9B9;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  margin-right: 18px;
 }
 
 .subscribe__button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FCFCFC;
-    background-color: #FF2F64;
-    border: none;
-    border-radius: 26px;
-    width: 152px;
-    height: 44px;
-    box-sizing: border-box;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  border: none;
+  border-radius: 26px;
+  width: 152px;
+  height: 44px;
+  box-sizing: border-box;
 }
 </style>

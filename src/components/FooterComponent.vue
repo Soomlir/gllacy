@@ -70,6 +70,7 @@ img {
     border-radius: 50%;
     display: block;
     margin-right: 16px;
+    box-shadow: 0 0 0 2px hsla(0,0%,99%,.3);
 }
 
 .footer__list {

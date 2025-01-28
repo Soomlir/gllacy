@@ -1,18 +1,39 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const flagSubmenu = ref(false);
+const toggleShowSubMenu = () => {
+  flagSubmenu.value = !flagSubmenu.value;
+}
+console.log(flagSubmenu.value)
+</script>
 
 <template>
   <header class="header">
-    <a href="#!">
-      <img
-        src="/images/gllacy-logo.svg"
-        width="137"
-        height="56"
-        alt="Логотип Gllacy."
-      />
+    <a>
+      <img src="/images/gllacy-logo.svg" width="137" height="56" alt="Логотип Gllacy." />
     </a>
     <ul class="header__list">
       <li class="header__item">
-        <a href="#!" class="header__link header__link--arrow">Каталог</a>
+        <a href="#!" class="header__link header__link--arrow" :class="{ 'arrow-up': flagSubmenu }"
+          @click="toggleShowSubMenu">Каталог</a>
+        <ul class="header__submenu submenu" :class="{ 'submenu-show': flagSubmenu }">
+          <li class="submenu__item">
+            <a class="submenu__link" href="#!">Новинки</a>
+          </li>
+          <li class="submenu__item">
+            <a class="submenu__link" href="#!">Сливочное</a>
+          </li>
+          <li class="submenu__item">
+            <a class="submenu__link" href="#!">Щербеты</a>
+          </li>
+          <li class="submenu__item">
+            <a class="submenu__link" href="#!">Фруктовый лед</a>
+          </li>
+          <li class="submenu__item">
+            <a class="submenu__link" href="#!">Мелорин</a>
+          </li>
+        </ul>
       </li>
       <li class="header__item">
         <a href="#!" class="header__link">Доставка и оплата</a>
@@ -66,28 +87,90 @@ img {
 
 .header__item {
   position: relative;
-
-  &:first-child::after {
-    content: "";
-    position: absolute;
-    right: 16px;
-    bottom: 3px;
-    width: 16px;
-    height: 16px;
-    background-image: url("../images/arrow-down.svg");
-  }
+  display: block;
 }
 
 .header__link {
-  padding: 16px;
+  padding: 6px 16px;
   text-decoration: none;
   color: #2d3440;
   font-size: 16px;
   line-height: 20px;
 
-  &--arrow {
-    padding-right: 40px;
+  &:hover {
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
   }
+
+  &:active {
+    background-color: #FCFCFC;
+  }
+
+  &:focus {
+    background-color: rgba(252, 252, 252, 0.5);
+    border: 2px solid #2D3440;
+    outline: none;
+    border-radius: 30px;
+  }
+
+  &--arrow {
+    display: flex;
+  }
+
+  &--arrow::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 2px 0 0 7px;
+    background-image: url("../images/arrow-down.svg");
+  }
+}
+
+.header__submenu {
+  display: none;
+  width: 140px;
+  flex-wrap: wrap;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #FCFCFC;
+  z-index: 1;
+  border-radius: 4px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+}
+
+.submenu__item {
+  padding: 8px 0;
+  width: 106px;
+
+  &:first-child {
+    border-bottom: 1px solid #000000;
+  }
+
+  &:first-child a {
+    font-weight: 700;
+
+  }
+}
+
+.submenu__link {
+  text-decoration: none;
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+}
+
+.submenu-show {
+  display: flex;
+}
+
+.arrow-up::after {
+  margin-top: 4px;
+  transform: rotate(180deg);
 }
 
 .header__nav {

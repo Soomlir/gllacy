@@ -118,5 +118,6 @@ img {
   line-height: 20px;
   box-sizing: border-box;
   padding: 12px 24px;
+  box-shadow: 0 0 0 4px hsla(0, 0%, 99%, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 </style>
