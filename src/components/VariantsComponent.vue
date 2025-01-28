@@ -19,7 +19,7 @@ const variantsData = [
   {
     id: 3,
     heading: "Черника",
-    text: `Крем-брюле с черничным джемом`,
+    text: `Крем-брюле <br> с черничным джемом`,
     price: 330,
     imgSrc: "/images/product-3.png",
     alt: "Черника",
@@ -27,7 +27,7 @@ const variantsData = [
   {
     id: 4,
     heading: "Бабл-гам",
-    text: `Ванильный пломбир со сладкой посыпкой`,
+    text: `Ванильный пломбир <br> со сладкой посыпкой`,
     price: 320,
     imgSrc: "/images/product-4.png",
     alt: "Бабл-гам",
@@ -54,17 +54,19 @@ const variantsData = [
           :alt="product.alt"
         />
         <h3 class="variants__title">{{ product.heading }}</h3>
-        <p class="variants__text">{{ product.text }}</p>
-        <p class="variants__price">{{ product.price }} ₽/кг</p>
-        <a class="variants__order" href="#!">
-          <span class="visually-hidden">Заказать.</span>
-        </a>
+        <p class="variants__text" v-html="product.text"></p>
+        <div class="variants__buy">
+          <p class="variants__price">{{ product.price }} ₽/кг</p>
+          <a class="variants__order" href="#!">
+            <span class="visually-hidden">Заказать.</span>
+          </a>
+        </div>
       </li>
     </ul>
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 img {
   max-width: 100%;
   height: auto;
@@ -133,13 +135,49 @@ img {
 }
 
 .variants__text {
-    margin: 0;
-    color: #565C66;
-    font-size: 16px;
-    line-height: 22px;
-    width: 190px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+  margin: 0;
+  color: #565c66;
+  font-size: 16px;
+  line-height: 22px;
+  width: 190px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.variants__buy {
+  display: flex;
+  margin-top: 16px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.variants__price {
+  color: #2d3440;
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 4px;
+  width: 140px;
+}
+
+.variants__order {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background-color: #ff2f64;
+  border-radius: 50%;
+  margin-left: 18px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin: auto;
+    background-image: url("../images/cart-list.svg");
+  }
 }
 </style>

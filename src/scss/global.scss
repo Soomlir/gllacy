@@ -32,3 +32,9 @@ body {
 	position: fixed;
 	transform: scale(0);
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

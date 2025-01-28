@@ -4,20 +4,33 @@ import { ref } from "vue";
 const flagSubmenu = ref(false);
 const toggleShowSubMenu = () => {
   flagSubmenu.value = !flagSubmenu.value;
-}
-console.log(flagSubmenu.value)
+};
+console.log(flagSubmenu.value);
 </script>
 
 <template>
   <header class="header">
     <a>
-      <img src="/images/gllacy-logo.svg" width="137" height="56" alt="Логотип Gllacy." />
+      <img
+        src="/images/gllacy-logo.svg"
+        width="137"
+        height="56"
+        alt="Логотип Gllacy."
+      />
     </a>
     <ul class="header__list">
       <li class="header__item">
-        <a href="#!" class="header__link header__link--arrow" :class="{ 'arrow-up': flagSubmenu }"
-          @click="toggleShowSubMenu">Каталог</a>
-        <ul class="header__submenu submenu" :class="{ 'submenu-show': flagSubmenu }">
+        <a
+          href="#!"
+          class="header__link header__link--arrow"
+          :class="{ 'arrow-up': flagSubmenu }"
+          @click="toggleShowSubMenu"
+          >Каталог</a
+        >
+        <ul
+          class="header__submenu submenu"
+          :class="{ 'submenu-show': flagSubmenu }"
+        >
           <li class="submenu__item">
             <a class="submenu__link" href="#!">Новинки</a>
           </li>
@@ -103,12 +116,12 @@ img {
   }
 
   &:active {
-    background-color: #FCFCFC;
+    background-color: #fcfcfc;
   }
 
   &:focus {
     background-color: rgba(252, 252, 252, 0.5);
-    border: 2px solid #2D3440;
+    border: 2px solid #2d3440;
     outline: none;
     border-radius: 30px;
   }
@@ -135,7 +148,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   z-index: 1;
   border-radius: 4px;
   padding: 8px 16px;
@@ -152,13 +165,12 @@ img {
 
   &:first-child a {
     font-weight: 700;
-
   }
 }
 
 .submenu__link {
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
   font-size: 14px;
   line-height: 20px;
   display: block;

@@ -1,28 +1,55 @@
 <script setup></script>
 
 <template>
-    <section class="delivery">
-        <div class="delivery__info">
-            <h2 class="delivery__heading">Доставка любимого мороженого на дом</h2>
-            <p class="delivery__text">Хочется полакомиться любимым десертом, <br>но нет времени съездить в магазин?
-                 Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-        </div>
-        <div class="delivery__order order">
-            <p class="order__text">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
-            <form action="/" method="post">
-                <label for="date">Дата</label>
-                <input type="text" name="date" placeholder="01.04.2020">
-                <label for="phone">Телефон</label>
-                <input type="phone" name="phone" placeholder="+7 800 999-00-00">
-                <label for="address">Адрес</label>
-                <input type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
-                <button type="submit">Отправить</button>
-            </form>
-        </div>
-    </section>
+  <section class="delivery">
+    <div class="delivery__info">
+      <h2 class="delivery__heading">Доставка любимого мороженого на дом</h2>
+      <p class="delivery__text">
+        Хочется полакомиться любимым десертом, <br />но нет времени съездить в
+        магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш
+        заказ в течение часа!
+      </p>
+    </div>
+    <div class="delivery__order order">
+      <p class="order__text">
+        Укажите адрес и дату доставки, и мы свяжемся<br />
+        с вами, чтобы подтвердить заказ.
+      </p>
+      <form class="order__form" action="/" method="post">
+        <label class="order__label"
+          ><span>Дата</span>
+          <input
+            class="order__input"
+            type="text"
+            name="date"
+            placeholder="01.04.2020"
+          />
+        </label>
+        <label class="order__label"
+          ><span>Телефон</span>
+          <input
+            class="order__input"
+            type="phone"
+            name="phone"
+            placeholder="+7 800 999-00-00"
+          />
+        </label>
+        <label class="order__label order__label--address" for="address"
+          ><span>Адрес</span>
+          <input
+            class="order__input"
+            type="text"
+            name="address"
+            placeholder="ул. Большая Конюшенная, 19/8"
+          />
+        </label>
+        <button class="order__button" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 img {
   max-width: 100%;
   height: auto;
@@ -47,40 +74,90 @@ img {
 }
 
 .delivery__info {
-    width: 379px;
-    padding: 168px 100px 162px 100px;
+  width: 379px;
+  padding: 168px 100px 162px 100px;
 }
 
 .delivery__heading {
-    margin: 0;
-    color: #2D3440;
-    font-size: 32px;
-    line-height: 46px;
-    font-weight: 900;
-    margin-bottom: 24px;
+  margin: 0;
+  color: #2d3440;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  margin-bottom: 24px;
 }
 
 .delivery__text {
-    margin: 0;
-    color: #565C66;
-    font-size: 16px;
-    line-height: 22px;
+  margin: 0;
+  color: #565c66;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .delivery__order {
-    box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
-    width: 500px;
-    height: 406px;
-    background-color: #FCFCFC;
-    border-radius: 8px;
-    padding: 40px 40px 42px 40px;
-    box-sizing: border-box;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  width: 500px;
+  height: 406px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  padding: 40px 40px 42px 40px;
+  box-sizing: border-box;
 }
 
 .order__text {
-    color: #565C66;
-    font-size: 16px;
-    line-height: 22px;
-    margin: 0;
+  color: #565c66;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.order__form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  grid-template-rows: 76px 76px 76px;
+  gap: 20px 16px;
+}
+
+.order__label {
+  color: #2d3440;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+
+  span {
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  &--address {
+    grid-column: span 2;
+  }
+}
+
+.order__input {
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  border: 1px solid #B9B9B9;
+}
+
+.order__button {
+  width: 152px;
+  height: 44px;
+  background-color: #ff2f64;
+  border: none;
+  cursor: pointer;
+  border-radius: 26px;
+  grid-column: span 2;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 12px;
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3),
+    0 4px 12px rgba(45, 52, 64, 0.1);
+  color: #FCFCFC;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
 }
 </style>

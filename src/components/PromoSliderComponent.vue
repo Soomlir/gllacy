@@ -47,14 +47,23 @@ const socialData = [
   <section class="promo">
     <h2 class="visually-hidden">Промо слайдер - Gllacy</h2>
     <ul class="promo__slider">
-      <li class="promo__item" v-for="{ id, heading, text, img } in sliderData" :key="id">
+      <li
+        class="promo__item"
+        v-for="{ id, heading, text, img } in sliderData"
+        :key="id"
+      >
         <div class="promo__info">
           <h3 class="promo__heading">{{ heading }}</h3>
           <p class="promo__text">{{ text }}</p>
           <a class="promo__button" href="#!">Заказать</a>
         </div>
         <picture class="promo__picture">
-          <img :src="img.src" :width="img.width" :height="img.height" :alt="img.alt" />
+          <img
+            :src="img.src"
+            :width="img.width"
+            :height="img.height"
+            :alt="img.alt"
+          />
         </picture>
         <button class="promo__prev">
           <span class="visually-hidden">Предыдущий слайд.</span>
@@ -72,7 +81,11 @@ const socialData = [
       </div>
       <div class="promo__social social">
         <ul class="social__list">
-          <li class="social__item" v-for="element in socialData" :key="element.id">
+          <li
+            class="social__item"
+            v-for="element in socialData"
+            :key="element.id"
+          >
             <a class="social__link" :href="element.src">
               <span class="visually-hidden">{{ element.text }}</span>
             </a>
@@ -153,7 +166,8 @@ img {
   border-radius: 22px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   font-family: inherit;
-  box-shadow: 0 0 0 4px hsla(0, 0%, 99%, .4), 0 4px 12px rgba(45, 52, 64, .1);
+  box-shadow: 0 0 0 4px hsla(0, 0%, 99%, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
+  font-weight: 700;
 }
 
 .promo__picture {
@@ -164,7 +178,7 @@ img {
     position: absolute;
     width: 312px;
     height: 312px;
-    background-color: #FCDC92;
+    background-color: #fcdc92;
     content: "";
     z-index: -1;
     border-radius: 50%;
@@ -190,7 +204,6 @@ img {
   right: 590px;
   top: 258px;
 
-
   &::before {
     position: absolute;
     content: "";
@@ -204,7 +217,6 @@ img {
 .promo__next {
   right: 278px;
   top: 258px;
-
 
   &::before {
     position: absolute;
@@ -232,7 +244,7 @@ img {
   height: 12px;
   appearance: none;
   border-radius: 50%;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   margin: 0;
   padding: 0;
   margin-right: 8px;
@@ -241,10 +253,6 @@ img {
 
   &--current {
     opacity: 1;
-  }
-
-  &:hover {
-
   }
 }
 
@@ -259,9 +267,9 @@ img {
   display: block;
   width: 24px;
   height: 24px;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   border-radius: 50%;
   margin-left: 16px;
-  box-shadow: 0 0 0 2px hsla(0,0%,99%,.3);
+  box-shadow: 0 0 0 2px hsla(0, 0%, 99%, 0.3);
 }
 </style>

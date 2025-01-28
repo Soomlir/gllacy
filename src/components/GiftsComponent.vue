@@ -10,7 +10,7 @@ const giftsData = [
   {
     id: 2,
     heading: "Маршмеллоу даром!",
-    text: `При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.`,
+    text: `При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных зефирок совершенно бесплатно.`,
     src: "/images/gift-2.png",
     alt: "Маршмеллоу даром!",
   },
@@ -28,7 +28,7 @@ const giftsData = [
       >
         <div class="article__wrap">
           <h3 class="gifts__title">{{ item.heading }}</h3>
-          <p class="gifts__text">{{ item.text }}</p>
+          <p class="gifts__text" v-html="item.text"></p>
           <a class="gifts__button" href="#!">Хочу подарок</a>
         </div>
 
@@ -79,7 +79,7 @@ img {
   background-color: #ff7799;
   display: flex;
   width: 570px;
- 
+
   border-radius: 15px;
 }
 
@@ -106,11 +106,11 @@ img {
 
 .gifts__button {
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
   border-radius: 26px;
   width: 176px;
   height: 44px;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   display: block;
   text-align: center;
   font-weight: 700;
