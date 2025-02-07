@@ -176,6 +176,7 @@ img {
     position: absolute;
     width: 16px;
     height: 16px;
+    inset: 0;
     margin: auto;
     background-image: url("../images/cart-list.svg");
   }

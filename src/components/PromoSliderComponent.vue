@@ -209,6 +209,7 @@ img {
     content: "";
     width: 16px;
     height: 16px;
+    inset: 0;
     margin: auto;
     background-image: url("../images/arrow-left.svg");
   }
@@ -223,6 +224,7 @@ img {
     content: "";
     width: 16px;
     height: 16px;
+    inset: 0;
     margin: auto;
     background-image: url("../images/arrow-left.svg");
     transform: scaleX(-1);
