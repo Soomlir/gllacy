@@ -75,7 +75,7 @@ img {
 
 .delivery__info {
   width: 379px;
-  padding: 168px 100px 162px 100px;
+  padding: 167px 100px 163px 100px;
 }
 
 .delivery__heading {

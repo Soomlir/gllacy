@@ -37,9 +37,9 @@ const sliderData = [
 ];
 
 const socialData = [
-  { id: 1, src: "", text: "Telegram" },
-  { id: 2, src: "", text: "Vk" },
-  { id: 3, src: "", text: "YouTube" },
+  { id: 1, src: "", text: "Telegram", className: 'social__link--tg' },
+  { id: 2, src: "", text: "Vk", className: 'social__link--vk' },
+  { id: 3, src: "", text: "YouTube", className: 'social__link--youtube' },
 ];
 </script>
 
@@ -86,7 +86,7 @@ const socialData = [
             v-for="element in socialData"
             :key="element.id"
           >
-            <a class="social__link" :href="element.src">
+            <a class="social__link" :class="element.className" :href="element.src">
               <span class="visually-hidden">{{ element.text }}</span>
             </a>
           </li>
@@ -259,19 +259,43 @@ img {
 }
 
 .social__list {
-  display: flex;
   margin: 0;
+  display: flex;
   padding: 0;
+  min-height: 24px;
   list-style: none;
 }
 
 .social__link {
-  display: block;
+  position: relative;
+  display: flex;
   width: 24px;
   height: 24px;
-  background-color: #fcfcfc;
   border-radius: 50%;
   margin-left: 16px;
-  box-shadow: 0 0 0 2px hsla(0, 0%, 99%, 0.3);
+  // box-shadow: 0 0 0 2px hsla(0, 0%, 99%, 0.3);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    inset: 0;
+    margin: auto;
+    border-radius: 50%;
+   
+  }
+
+  &--tg::before {
+    background-image: url("../images/tg.svg");
+  }
+
+  &--vk::before {
+    background-image: url("../images/vk.svg");
+  }
+
+  &--youtube::before {
+    background-image: url("../images/youtube.svg");
+  }
 }
 </style>
