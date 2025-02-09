@@ -136,7 +136,7 @@ img {
     width: 16px;
     height: 16px;
     margin: 2px 0 0 7px;
-    background-image: url("../images/arrow-down.svg");
+    background-image: url("/images/arrow-down.svg");
   }
 }
 
@@ -214,7 +214,7 @@ img {
     left: 8px;
     width: 16px;
     height: 16px;
-    background-image: url("../images/search.svg");
+    background-image: url("/images/search.svg");
   }
 }
 
@@ -245,7 +245,7 @@ img {
     left: 16px;
     width: 16px;
     height: 16px;
-    background-image: url("../images/login.svg");
+    background-image: url("/images/login.svg");
   }
 }
 
@@ -259,7 +259,7 @@ img {
     left: 16px;
     width: 16px;
     height: 16px;
-    background-image: url("../images/cart.svg");
+    background-image: url("/images/cart.svg");
   }
 }
 </style>

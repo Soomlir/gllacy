@@ -21,7 +21,7 @@ const aboutData = [
   },
   {
     id: 4,
-    text: `Доставка нашего мороженого осуществляется в специальном термопаке, 
+    text: `Доставка нашего мороженого осуществляется в специальном термопаке,
          который не даёт мороженому растаять и позволяет сохранить превосходный вкус.`,
     image: `about__text--term`,
   },
@@ -42,7 +42,7 @@ const aboutData = [
           v-for="{ id, text, image } in aboutData"
           :key="id"
         >
-          <p class="about__text" :class="image" v-html="text"></p>
+          <p :class="`about__text about__text--${image}`" v-html="text"></p>
         </li>
       </ul>
     </div>
@@ -69,7 +69,7 @@ img {
   margin-bottom: 80px;
   box-sizing: border-box;
   padding: 24px;
-  background-image: url("../images/about-bg.jpg");
+  background-image: url("/images/about-bg.jpg");
 }
 
 .about__wrap {
@@ -121,19 +121,19 @@ img {
   }
 
   &--icecream::before {
-    background-image: url("../images/about-icecream.svg");
+    background-image: url("/images/about-icecream.svg");
   }
 
   &--cow::before {
-    background-image: url("../images/about-cow.svg");
+    background-image: url("/images/about-cow.svg");
   }
 
   &--list::before {
-    background-image: url("../images/about-list.svg");
+    background-image: url("/images/about-list.svg");
   }
 
   &--term::before {
-    background-image: url("../images/about-term.svg");
+    background-image: url("/images/about-term.svg");
   }
 }
 </style>

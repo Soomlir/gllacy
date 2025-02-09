@@ -120,7 +120,7 @@ img {
     height: 16px;
     top: 1px;
     left: -24px;
-    background-image: url("../images/heart.svg");
+    background-image: url("/images/heart.svg");
   }
 }
 

@@ -65,7 +65,7 @@ img {
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url("../images/delivery-bg.jpg");
+  background-image: url("/images/delivery-bg.jpg");
   display: flex;
   gap: 27px;
   align-items: center;

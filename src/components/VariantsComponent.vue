@@ -1,36 +1,34 @@
 <script setup>
+import { IMAGE_DIR } from '@/lib/constants';
+
 const variantsData = [
   {
     id: 1,
     heading: "Малинка",
     text: `Сливочное мороженое с малиновым джемом`,
     price: 310,
-    imgSrc: "/images/product-1.png",
-    alt: "Малинка",
+    imgSrc: "product-1.png",
   },
   {
     id: 2,
     heading: "Фисташка",
     text: `Фисташковый пломбир с кусочками шоколада`,
     price: 340,
-    imgSrc: "/images/product-2.png",
-    alt: "Фисташка",
+    imgSrc: "product-2.png",
   },
   {
     id: 3,
     heading: "Черника",
     text: `Крем-брюле <br> с черничным джемом`,
     price: 330,
-    imgSrc: "/images/product-3.png",
-    alt: "Черника",
+    imgSrc: "product-3.png",
   },
   {
     id: 4,
     heading: "Бабл-гам",
     text: `Ванильный пломбир <br> со сладкой посыпкой`,
     price: 320,
-    imgSrc: "/images/product-4.png",
-    alt: "Бабл-гам",
+    imgSrc: "product-4.png",
   },
 ];
 </script>
@@ -48,7 +46,7 @@ const variantsData = [
       >
         <img
           class="variants__image"
-          :src="product.imgSrc"
+          :src="`${IMAGE_DIR}/${product.imgSrc}`"
           width="168"
           height="168"
           :alt="product.alt"
@@ -178,7 +176,7 @@ img {
     height: 16px;
     inset: 0;
     margin: auto;
-    background-image: url("../images/cart-list.svg");
+    background-image: url("/images/cart-list.svg");
   }
 }
 </style>

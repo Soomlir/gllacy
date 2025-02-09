@@ -1,4 +1,6 @@
 <script setup>
+import { IMAGE_DIR } from '@/lib/constants';
+
 const sliderData = [
   // {
   //     id: 1,
@@ -6,7 +8,7 @@ const sliderData = [
   //     text: `Натуральное мороженое из свежих сливок
   //                 и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. `,
   //     img: {
-  //         src: '/images/promo-slide-1.png',
+  //         src: 'promo-slide-1.png',
   //         width: '328px',
   //         height: '507px',
   //         alt: 'Нежный пломбир с клубничным джемом.',
@@ -17,7 +19,7 @@ const sliderData = [
   //     heading: `Сливочное мороженое со вкусом банана`,
   //     text: `Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.`,
   //     img: {
-  //         src: '/images/promo-slide-2.png',
+  //         src: 'promo-slide-2.png',
   //         width: '312px',
   //         height: '507px',
   //         alt: 'Сливочное мороженое со вкусом банана.',
@@ -28,7 +30,7 @@ const sliderData = [
     heading: `Карамельный пломбир с маршмеллоу`,
     text: `Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов. `,
     img: {
-      src: "/images/promo-slide-3.png",
+      src: "promo-slide-3.png",
       width: "350px",
       height: "507px ",
       alt: "Карамельный пломбир с маршмеллоу. ",
@@ -59,7 +61,7 @@ const socialData = [
         </div>
         <picture class="promo__picture">
           <img
-            :src="img.src"
+            :src="`${IMAGE_DIR}/${img.src}`"
             :width="img.width"
             :height="img.height"
             :alt="img.alt"
@@ -211,7 +213,7 @@ img {
     height: 16px;
     inset: 0;
     margin: auto;
-    background-image: url("../images/arrow-left.svg");
+    background-image: url("/images/arrow-left.svg");
   }
 }
 
@@ -226,7 +228,7 @@ img {
     height: 16px;
     inset: 0;
     margin: auto;
-    background-image: url("../images/arrow-left.svg");
+    background-image: url("/images/arrow-left.svg");
     transform: scaleX(-1);
   }
 }
@@ -283,19 +285,19 @@ img {
     inset: 0;
     margin: auto;
     border-radius: 50%;
-   
+
   }
 
   &--tg::before {
-    background-image: url("../images/tg.svg");
+    background-image: url("/images/tg.svg");
   }
 
   &--vk::before {
-    background-image: url("../images/vk.svg");
+    background-image: url("/images/vk.svg");
   }
 
   &--youtube::before {
-    background-image: url("../images/youtube.svg");
+    background-image: url("/images/youtube.svg");
   }
 }
 </style>

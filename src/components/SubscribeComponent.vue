@@ -58,7 +58,7 @@ img {
 .subscribe__article {
   border-radius: 16px;
   width: 577px;
-  background-image: url("../images/article-bg.jpg");
+  background-image: url("/images/article-bg.jpg");
   padding: 33px 235px 69px 32px;
   box-sizing: border-box;
 }
@@ -83,7 +83,7 @@ img {
   background-color: #ffffff;
   border-radius: 16px;
   padding: 6px;
-  background-image: url("../images/subscribe-bg.jpg");
+  background-image: url("/images/subscribe-bg.jpg");
 }
 
 .content {

@@ -1,17 +1,19 @@
 <script setup>
+import { IMAGE_DIR } from '@/lib/constants';
+
 const giftsData = [
   {
     id: 1,
     heading: "Малинка даром!",
     text: `При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.`,
-    src: "/images/gift-1.png",
+    src: "gift-1.png",
     alt: "Малинка даром!",
   },
   {
     id: 2,
     heading: "Маршмеллоу даром!",
     text: `При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных зефирок совершенно бесплатно.`,
-    src: "/images/gift-2.png",
+    src: "gift-2.png",
     alt: "Маршмеллоу даром!",
   },
 ];
@@ -32,7 +34,7 @@ const giftsData = [
           <a class="gifts__button" href="#!">Хочу подарок</a>
         </div>
 
-        <img class="gifts__images" :src="item.src" :alt="item.alt" />
+        <img class="gifts__images" :src="`${IMAGE_DIR}/${item.src}`" :alt="item.alt" />
       </article>
     </div>
   </section>

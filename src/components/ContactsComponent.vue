@@ -36,7 +36,7 @@ img {
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url("../images/contacts-bg.jpg");
+  background-image: url("/images/contacts-bg.jpg");
   padding: 64px 763px 64px 64px;
   box-sizing: border-box;
   border-radius: 16px;
