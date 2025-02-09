@@ -9,11 +9,13 @@ import ContactsComponent from "../components/ContactsComponent.vue";
 </script>
 
 <template>
-  <PromoSliderComponent />
-  <GiftsComponent />
-  <VariantsComponent />
-  <AboutUsComponent />
-  <SubscribeComponent />
-  <DeliveryComponent />
-  <ContactsComponent />
+  <main class="main">
+    <PromoSliderComponent />
+    <GiftsComponent />
+    <VariantsComponent />
+    <AboutUsComponent />
+    <SubscribeComponent />
+    <DeliveryComponent />
+    <ContactsComponent />
+  </main>
 </template>
