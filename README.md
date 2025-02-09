@@ -7,5 +7,5 @@
 - sass
 - vue
 
-  [Опубликованная версия](https://https://soomlir.github.io/gllacy/)
+  [Опубликованная версия](https://soomlir.github.io/gllacy/)
   
