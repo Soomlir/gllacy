@@ -1,5 +1,5 @@
-import IndexPage from "@/pages/IndexPage.vue";
-import CatalogPage from "@/pages/CatalogPage.vue";
+import IndexPage from "../pages/IndexPage.vue";
+import CatalogPage from "../pages/CatalogPage.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
