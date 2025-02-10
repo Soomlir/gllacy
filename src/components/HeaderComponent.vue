@@ -104,11 +104,12 @@ img {
 }
 
 .header__link {
-  padding: 6px 16px;
+  padding: 6px 14px;
   text-decoration: none;
   color: #2d3440;
   font-size: 16px;
   line-height: 20px;
+  border: 2px solid transparent;
 
   &:hover {
     background-color: rgba(252, 252, 252, 0.5);
@@ -121,7 +122,7 @@ img {
 
   &:focus {
     background-color: rgba(252, 252, 252, 0.5);
-    border: 2px solid #2d3440;
+    border-color: #2d3440;
     outline: none;
     border-radius: 30px;
   }

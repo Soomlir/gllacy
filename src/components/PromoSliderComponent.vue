@@ -1,5 +1,6 @@
 <script setup>
 import { IMAGE_DIR } from '@/lib/constants';
+import SocialComponent from './SocialComponent.vue';
 
 const sliderData = [
   // {
@@ -36,12 +37,6 @@ const sliderData = [
       alt: "Карамельный пломбир с маршмеллоу. ",
     },
   },
-];
-
-const socialData = [
-  { id: 1, src: "", text: "Telegram", className: 'social__link--tg' },
-  { id: 2, src: "", text: "Vk", className: 'social__link--vk' },
-  { id: 3, src: "", text: "YouTube", className: 'social__link--youtube' },
 ];
 </script>
 
@@ -81,19 +76,7 @@ const socialData = [
         <input class="promo__radio" type="radio" />
         <input class="promo__radio promo__radio--current" type="radio" />
       </div>
-      <div class="promo__social social">
-        <ul class="social__list">
-          <li
-            class="social__item"
-            v-for="element in socialData"
-            :key="element.id"
-          >
-            <a class="social__link" :class="element.className" :href="element.src">
-              <span class="visually-hidden">{{ element.text }}</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <SocialComponent />
     </div>
   </section>
 </template>
@@ -260,44 +243,4 @@ img {
   }
 }
 
-.social__list {
-  margin: 0;
-  display: flex;
-  padding: 0;
-  min-height: 24px;
-  list-style: none;
-}
-
-.social__link {
-  position: relative;
-  display: flex;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  margin-left: 16px;
-  // box-shadow: 0 0 0 2px hsla(0, 0%, 99%, 0.3);
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    inset: 0;
-    margin: auto;
-    border-radius: 50%;
-
-  }
-
-  &--tg::before {
-    background-image: url("/images/tg.svg");
-  }
-
-  &--vk::before {
-    background-image: url("/images/vk.svg");
-  }
-
-  &--youtube::before {
-    background-image: url("/images/youtube.svg");
-  }
-}
 </style>
