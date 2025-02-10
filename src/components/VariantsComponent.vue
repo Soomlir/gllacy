@@ -118,8 +118,8 @@ img {
   position: absolute;
   top: -51px;
   left: 51px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .variants__title {

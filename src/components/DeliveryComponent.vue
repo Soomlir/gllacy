@@ -17,7 +17,7 @@
       </p>
       <form class="order__form" action="/" method="post">
         <label class="order__label"
-          ><span>Дата</span>
+          ><span class="order__icon order__icon--date">Дата</span>
           <input
             class="order__input"
             type="text"
@@ -35,7 +35,7 @@
           />
         </label>
         <label class="order__label order__label--address" for="address"
-          ><span>Адрес</span>
+          ><span class="order__icon order__icon--address">Адрес</span>
           <input
             class="order__input"
             type="text"
@@ -124,6 +124,7 @@ img {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  position: relative;
 
   span {
     margin-bottom: 8px;
@@ -135,11 +136,41 @@ img {
   }
 }
 
+.order__icon {
+  display: block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/images/info.svg");
+    width: 14px;
+    height: 14px;
+  }
+
+  &--date::after {
+    top: 3px;
+    left: 44px;
+  }
+
+  &--address::after {
+    top: 3px; 
+    left: 56px;
+  }
+}
+
 .order__input {
   width: 100%;
   height: 48px;
   box-sizing: border-box;
-  border: 1px solid #B9B9B9;
+  border: 1px solid #b9b9b9;
+  color: #999999;
+  font-size: 16px;
+  line-height: 20px;
+  font: inherit;
+  padding: 14px 16px;
+  font-weight: 400;
 }
 
 .order__button {
@@ -155,7 +186,7 @@ img {
   margin-top: 12px;
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3),
     0 4px 12px rgba(45, 52, 64, 0.1);
-  color: #FCFCFC;
+  color: #fcfcfc;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;

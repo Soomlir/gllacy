@@ -1,9 +1,5 @@
 <script setup>
-const socialData = [
-  { id: 1, src: "", text: "Telegram" },
-  { id: 2, src: "", text: "Vk" },
-  { id: 3, src: "", text: "YouTube" },
-];
+import SocialComponent from './SocialComponent.vue';
 
 const footerData = [
   { id: 1, src: "", text: "Для поставщиков", current: true },
@@ -15,15 +11,7 @@ const footerData = [
 
 <template>
   <footer class="footer">
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item" v-for="item in socialData" :key="item.id">
-          <a class="social__link" :href="item.src"
-            ><span class="visually-hidden">{{ item.text }}</span></a
-          >
-        </li>
-      </ul>
-    </div>
+    <SocialComponent class="footer__social"/>
     <ul class="footer__list">
       <li
         class="footer__item"
@@ -65,24 +53,6 @@ img {
   margin-left: auto;
   display: flex;
   padding: 47px 0;
-}
-
-.social__list {
-  margin: 0;
-  margin-top: 1px;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
-
-.social__link {
-  width: 24px;
-  height: 24px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: block;
-  margin-right: 16px;
-  box-shadow: 0 0 0 2px hsla(0, 0%, 99%, 0.3);
 }
 
 .footer__list {

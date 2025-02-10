@@ -242,5 +242,4 @@ img {
     opacity: 1;
   }
 }
-
 </style>
