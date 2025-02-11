@@ -90,8 +90,6 @@ img {
 .delivery__text {
   margin: 0;
   color: #565c66;
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .delivery__order {
@@ -106,8 +104,6 @@ img {
 
 .order__text {
   color: #565c66;
-  font-size: 16px;
-  line-height: 22px;
   margin: 0;
   margin-bottom: 32px;
 }
@@ -121,8 +117,6 @@ img {
 
 .order__label {
   color: #2d3440;
-  font-size: 16px;
-  line-height: 20px;
   font-weight: 700;
   position: relative;
 
@@ -166,7 +160,6 @@ img {
   box-sizing: border-box;
   border: 1px solid #b9b9b9;
   color: #999999;
-  font-size: 16px;
   line-height: 20px;
   font: inherit;
   padding: 14px 16px;
@@ -187,7 +180,6 @@ img {
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3),
     0 4px 12px rgba(45, 52, 64, 0.1);
   color: #fcfcfc;
-  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
 }

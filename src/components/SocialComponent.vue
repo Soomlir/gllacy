@@ -39,6 +39,7 @@ const socialData = [
   display: flex;
   padding: 0;
   list-style: none;
+  column-gap: 16px;
 }
 
 .social__link {
@@ -47,8 +48,7 @@ const socialData = [
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  margin-left: 16px;
-//   box-shadow: rgba(252, 252, 252, 0.3)
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 
   &::before {
     content: "";

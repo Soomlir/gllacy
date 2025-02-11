@@ -64,19 +64,16 @@ img {
   flex-wrap: wrap;
   flex-direction: column;
   width: 356px;
-  height: 48px;
-  margin-left: 267px;
-  row-gap: 7px;
+  height: 50px;
+  margin-left: 283px;
+  row-gap: 8px;
 }
 
 .footer__link {
-  width: 170px;
-  height: 24px;
   color: #2d3440;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
-  margin-bottom: 4px;
 
   &--current {
     font-weight: 700;

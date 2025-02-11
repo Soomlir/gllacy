@@ -8,7 +8,7 @@
         <option value="popular">по популярности</option>
       </select>
     </fieldset>
-    <fieldset class="catalog__fieldset">
+    <fieldset class="catalog__fieldset catalog__fieldset--price">
       <legend class="catalog__legend">Цена: 100 ₽ – 500 ₽</legend>
       <div></div>
     </fieldset>
@@ -56,12 +56,13 @@
             ><input
               class="catalog__checkbox"
               type="checkbox"
+              checked
             />шоколадные</label
           >
         </p>
         <p>
           <label
-            ><input class="catalog__checkbox" type="checkbox" />сахарные
+            ><input class="catalog__checkbox" type="checkbox" checked />сахарные
             посыпки</label
           >
         </p>
@@ -82,7 +83,7 @@
         </p>
       </div>
     </fieldset>
-    <button type="submit">Применить</button>
+    <button class="catalog__button" type="submit">Применить</button>
   </form>
 </template>
 
@@ -101,6 +102,12 @@
   padding: 0;
   margin-right: 25px;
 
+  &--price div{
+    height: 36px;
+    border-radius: 20px;
+    background-color: rgba(252, 252, 252, 0.3);
+  }
+
   &--fat {
     width: 380px;
     margin-right: 0;
@@ -117,9 +124,17 @@
     width: 604px;
     box-sizing: border-box;
     margin-top: 16px;
+    margin-right: 18px;
 
     p {
       margin: 0;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }
@@ -185,11 +200,54 @@
   }
 }
 
+.catalog__checkboxs {
+  display: flex;
+  padding: 10px 24px;
+  justify-content: space-between;
+  width: 604px;
+  box-sizing: border-box;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+}
+
 .catalog__checkbox {
   appearance: none;
   width: 16px;
   height: 16px;
   border: 2px solid #2d3440;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-right: 8px;
+  position: relative;
+
+  &:checked {
+    border: none;
+  }
+
+  &:checked::before {
+    appearance: none;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("/images/check-on.svg");
+    z-index: 1;
+  }
+}
+
+.catalog__button {
+  width: 185px;
+  height: 36px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-top: 46px;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
 </style>

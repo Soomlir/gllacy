@@ -106,8 +106,6 @@ img {
   margin: 0;
   padding-left: 64px;
   color: #565c66;
-  font-size: 16px;
-  line-height: 22px;
   position: relative;
 
   &::before {

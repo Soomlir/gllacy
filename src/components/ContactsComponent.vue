@@ -54,8 +54,6 @@ img {
 .info__address,
 .info__phone-title {
   color: #565c66;
-  font-size: 16px;
-  line-height: 22px;
   margin: 0;
   margin-bottom: 12px;
 }
@@ -85,7 +83,6 @@ img {
 .contacts__button {
   text-decoration: none;
   color: #fcfcfc;
-  font-size: 16px;
   line-height: 20px;
   display: block;
   width: 250px;

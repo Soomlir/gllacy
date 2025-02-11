@@ -107,6 +107,7 @@ img {
   padding: 6px 14px;
   text-decoration: none;
   color: #2d3440;
+  // color: $light-dark;
   font-size: 16px;
   line-height: 20px;
   border: 2px solid transparent;

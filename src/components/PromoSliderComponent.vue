@@ -98,7 +98,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   background-image: url("/images/slider-bg-3.jpg");
-  padding-bottom: 76px;
+  padding-bottom: 74px;
 }
 
 .promo__slider {
