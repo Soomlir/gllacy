@@ -72,9 +72,9 @@ const sliderData = [
     </ul>
     <div class="promo__bottom">
       <div class="promo__controls">
-        <input class="promo__radio" type="radio" />
-        <input class="promo__radio" type="radio" />
-        <input class="promo__radio promo__radio--current" type="radio" />
+        <button class="promo__button-slider" type="radio"></button>
+        <button class="promo__button-slider" type="radio"></button>
+        <button class="promo__button-slider promo__button-slider--current" type="radio"></button>
       </div>
       <SocialComponent />
     </div>
@@ -98,7 +98,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   background-image: url("/images/slider-bg-3.jpg");
-  padding-bottom: 74px;
+  padding-bottom: 80px;
 }
 
 .promo__slider {
@@ -222,11 +222,11 @@ img {
 
 .promo__controls {
   width: 68px;
-  margin-top: 8px;
+  margin-top: 1px;
   margin-right: auto;
 }
 
-.promo__radio {
+.promo__button-slider {
   width: 12px;
   height: 12px;
   appearance: none;
@@ -237,6 +237,7 @@ img {
   margin-right: 8px;
   opacity: 0.3;
   cursor: pointer;
+  border: none;
 
   &--current {
     opacity: 1;

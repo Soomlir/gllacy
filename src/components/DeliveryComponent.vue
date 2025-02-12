@@ -105,7 +105,7 @@ img {
 .order__text {
   color: #565c66;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .order__form {
@@ -121,7 +121,7 @@ img {
   position: relative;
 
   span {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     display: block;
   }
 
@@ -176,11 +176,12 @@ img {
   grid-column: span 2;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 12px;
+  margin-top: 13px;
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3),
     0 4px 12px rgba(45, 52, 64, 0.1);
   color: #fcfcfc;
+  font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 900;
 }
 </style>

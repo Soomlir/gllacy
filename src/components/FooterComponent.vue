@@ -66,7 +66,7 @@ img {
   width: 356px;
   height: 50px;
   margin-left: 283px;
-  row-gap: 8px;
+  row-gap: 5px;
 }
 
 .footer__link {

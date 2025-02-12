@@ -19,7 +19,7 @@
 <style scoped lang="scss">
 .breadcrumbs {
   margin-top: 31px;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
 .breadcrumbs__list {
