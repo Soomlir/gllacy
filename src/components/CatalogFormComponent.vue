@@ -143,7 +143,7 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  color: #2d3440;
+  color: $basic-extra-dark;
   margin-left: 14px;
   margin-bottom: 8px;
 }
@@ -156,7 +156,7 @@
   border-radius: 20px;
 
   option {
-    background-color: #fcfcfc;
+    background-color: $basic-extra-light;
   }
 }
 
@@ -181,7 +181,7 @@
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid #2d3440;
+  border: 2px solid $basic-extra-dark;
   border-radius: 50%;
   margin: 0;
   padding: 0;
@@ -193,7 +193,7 @@
     content: "";
     inset: 0;
     margin: auto;
-    background-color: #2d3440;
+    background-color: $basic-extra-dark;
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -214,7 +214,7 @@
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid #2d3440;
+  border: 2px solid $basic-extra-dark;
   box-sizing: border-box;
   margin: 0;
   padding: 0;

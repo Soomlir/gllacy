@@ -68,7 +68,7 @@ img {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
-  color: #2d3440;
+  color: $basic-extra-dark;
   text-align: center;
 }
 
@@ -78,7 +78,7 @@ img {
 }
 
 .gifts__article {
-  background-color: #ff7799;
+  background-color: $special-neutral;
   display: flex;
   width: 570px;
 
@@ -90,7 +90,7 @@ img {
 }
 
 .gifts__title {
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -99,7 +99,7 @@ img {
 }
 
 .gifts__text {
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-size: 16px;
   line-height: 22px;
   margin: 0;
@@ -108,11 +108,11 @@ img {
 
 .gifts__button {
   text-decoration: none;
-  color: #2d3440;
+  color: $basic-extra-dark;
   border-radius: 26px;
   width: 176px;
   height: 44px;
-  background-color: #fcfcfc;
+  background-color: $basic-extra-light;
   display: block;
   text-align: center;
   font-weight: 700;

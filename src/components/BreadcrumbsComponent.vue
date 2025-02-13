@@ -35,7 +35,7 @@
   line-height: 20px;
   font-weight: 700;
   text-decoration: none;
-  color: #2D3440;
+  color: $basic-extra-dark;
   position: relative;
 
   &::after {
@@ -50,7 +50,7 @@
 
   &--current {
     padding-bottom: 1px;
-    border-bottom: 1px solid #2D3440;
+    border-bottom: 1px solid $basic-extra-dark;
 
     &::after {
       background: none;

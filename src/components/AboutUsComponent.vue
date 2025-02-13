@@ -74,13 +74,13 @@ img {
 
 .about__wrap {
   border-radius: 16px;
-  background-color: #ffffff;
+  background-color: $basic-white;
   padding: 56px 39px 56px 40px;
 }
 
 .about__title {
   margin: 0;
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -105,7 +105,7 @@ img {
 .about__text {
   margin: 0;
   padding-left: 64px;
-  color: #565c66;
+  color: $basic-dark;
   position: relative;
 
   &::before {

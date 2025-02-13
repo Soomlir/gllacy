@@ -31,7 +31,7 @@
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 img {
   max-width: 100%;
   height: auto;
@@ -65,7 +65,7 @@ img {
 
 .subscribe__text {
   margin: 0;
-  color: #565c66;
+  color: $basic-dark;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 12px;
@@ -73,26 +73,26 @@ img {
 
 .subscribe__heading {
   margin: 0;
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-size: 24px;
   line-height: 30px;
 }
 
 .subscribe__form-wrap {
   width: 570px;
-  background-color: #ffffff;
+  background-color: $basic-white;
   border-radius: 16px;
   padding: 6px;
   background-image: url("/images/subscribe-bg.jpg");
 }
 
 .content {
-  background-color: #ffffff;
+  background-color: $basic-white;
   border-radius: 16px;
 }
 
 .content__text {
-  color: #565c66;
+  color: $basic-dark;
   font-size: 16px;
   line-height: 22px;
   padding: 26px 26px 44px 26px;
@@ -109,7 +109,7 @@ img {
   margin: 0;
   padding: 0;
   border-radius: 4px;
-  border: 1px solid #b9b9b9;
+  border: 1px solid $basic-neutral;
   font-size: 17px;
   line-height: 20px;
   padding: 14px 16px;
@@ -123,8 +123,8 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #FCFCFC;
-  background-color: #ff2f64;
+  color: $basic-extra-light;
+  background-color: $special-extra-bright;
   border: none;
   border-radius: 26px;
   width: 152px;

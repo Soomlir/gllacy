@@ -119,7 +119,7 @@ img {
 }
 
 .promo__heading {
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-size: 36px;
   line-height: 46px;
   width: 440px;
@@ -131,7 +131,7 @@ img {
 
 .promo__text {
   margin: 0;
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-size: 18px;
   line-height: 24px;
   width: 400px;
@@ -140,8 +140,8 @@ img {
 
 .promo__button {
   text-decoration: none;
-  color: #2d3440;
-  background-color: #fcfcfc;
+  color: $basic-extra-dark;
+  background-color: $basic-extra-light;
   width: 139px;
   height: 44px;
   box-sizing: border-box;
@@ -180,7 +180,7 @@ img {
   height: 38px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 50%;
-  border: 2px solid #fcfcfc;
+  border: 2px solid $basic-extra-light;
   z-index: 2;
   cursor: pointer;
 }
@@ -231,7 +231,7 @@ img {
   height: 12px;
   appearance: none;
   border-radius: 50%;
-  background-color: #fcfcfc;
+  background-color: $basic-extra-light;
   margin: 0;
   padding: 0;
   margin-right: 8px;

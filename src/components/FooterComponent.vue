@@ -70,7 +70,7 @@ img {
 }
 
 .footer__link {
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
@@ -97,13 +97,13 @@ img {
 }
 
 .copy__text {
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-size: 12px;
   line-height: 16px;
 
   a {
-    color: #2d3440;
-    text-decoration-color: #2d3440;
+    color: $basic-extra-dark;
+    text-decoration-color: $basic-extra-dark;
   }
 }
 </style>

@@ -84,7 +84,7 @@ img {
 }
 
 .variants__heading {
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -108,7 +108,7 @@ img {
   position: relative;
   width: 270px;
   height: 281px;
-  background-color: #fcfcfc;
+  background-color: $basic-extra-light;
   border-radius: 8px;
   padding-top: 133px;
   box-sizing: border-box;
@@ -123,7 +123,7 @@ img {
 }
 
 .variants__title {
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -134,7 +134,7 @@ img {
 
 .variants__text {
   margin: 0;
-  color: #565c66;
+  color: $basic-dark;
   font-size: 16px;
   line-height: 22px;
   width: 190px;
@@ -151,7 +151,7 @@ img {
 }
 
 .variants__price {
-  color: #2d3440;
+  color: $basic-extra-dark;
   margin: 0;
   font-size: 20px;
   line-height: 24px;
@@ -164,7 +164,7 @@ img {
   display: flex;
   width: 32px;
   height: 32px;
-  background-color: #ff2f64;
+  background-color: $special-extra-bright;
   border-radius: 50%;
   margin-left: 18px;
   position: relative;

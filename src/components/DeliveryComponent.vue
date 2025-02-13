@@ -80,7 +80,7 @@ img {
 
 .delivery__heading {
   margin: 0;
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -89,21 +89,21 @@ img {
 
 .delivery__text {
   margin: 0;
-  color: #565c66;
+  color: $basic-dark;
 }
 
 .delivery__order {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   width: 500px;
   height: 406px;
-  background-color: #fcfcfc;
+  background-color: $basic-extra-light;
   border-radius: 8px;
   padding: 40px 40px 42px 40px;
   box-sizing: border-box;
 }
 
 .order__text {
-  color: #565c66;
+  color: $basic-dark;
   margin: 0;
   margin-bottom: 31px;
 }
@@ -116,7 +116,7 @@ img {
 }
 
 .order__label {
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-weight: 700;
   position: relative;
 
@@ -158,7 +158,7 @@ img {
   width: 100%;
   height: 48px;
   box-sizing: border-box;
-  border: 1px solid #b9b9b9;
+  border: 1px solid $basic-neutral;
   color: #999999;
   line-height: 20px;
   font: inherit;
@@ -169,7 +169,7 @@ img {
 .order__button {
   width: 152px;
   height: 44px;
-  background-color: #ff2f64;
+  background-color: $special-extra-bright;
   border: none;
   cursor: pointer;
   border-radius: 26px;
@@ -179,7 +179,7 @@ img {
   margin-top: 13px;
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3),
     0 4px 12px rgba(45, 52, 64, 0.1);
-  color: #fcfcfc;
+  color: $basic-extra-light;
   font-size: 16px;
   line-height: 20px;
   font-weight: 900;

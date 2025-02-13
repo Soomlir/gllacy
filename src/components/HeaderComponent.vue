@@ -106,7 +106,7 @@ img {
 .header__link {
   padding: 6px 14px;
   text-decoration: none;
-  color: $lighten-dark;
+  color: $basic-extra-dark;
   font-size: 16px;
   line-height: 20px;
   border: 2px solid transparent;
@@ -117,12 +117,12 @@ img {
   }
 
   &:active {
-    background-color: #fcfcfc;
+    background-color: $basic-extra-light;
   }
 
   &:focus {
     background-color: rgba(252, 252, 252, 0.5);
-    border-color: #2d3440;
+    border-color: $basic-extra-dark;
     outline: none;
     border-radius: 30px;
   }
@@ -149,7 +149,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #fcfcfc;
+  background-color: $basic-extra-light;
   z-index: 1;
   border-radius: 4px;
   padding: 8px 16px;
@@ -171,7 +171,7 @@ img {
 
 .submenu__link {
   text-decoration: none;
-  color: #2d3440;
+  color: $basic-extra-dark;
   font-size: 14px;
   line-height: 20px;
   display: block;
@@ -197,14 +197,14 @@ img {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: #2d3440;
+  color: $basic-extra-dark;
 }
 
 .header__search {
   width: 32px;
   height: 32px;
   border-radius: 16px;
-  background-color: #fcfcfc4d;
+  background-color: $basic-extra-light;
   margin-left: 16px;
   position: relative;
 
@@ -224,14 +224,14 @@ img {
   display: block;
   height: 32px;
   padding: 6px 16px 6px 38px;
-  background-color: #fcfcfc4d;
+  background-color: $basic-extra-light;
   text-decoration: none;
   text-align: center;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 20px;
   border-radius: 15px;
-  color: #2d3440;
+  color: $basic-extra-dark;
   margin-left: 16px;
   position: relative;
 }

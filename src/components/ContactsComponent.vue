@@ -20,7 +20,7 @@
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 img {
   max-width: 100%;
   height: auto;
@@ -43,7 +43,7 @@ img {
 }
 
 .contacts__info {
-  background-color: #fcfcfc;
+  background-color: $basic-extra-light;
   border-radius: 8px;
   padding: 40px 40px 42px 40px;
   width: 343px;
@@ -53,14 +53,14 @@ img {
 
 .info__address,
 .info__phone-title {
-  color: #565c66;
+  color: $basic-dark;
   margin: 0;
   margin-bottom: 12px;
 }
 
 .info__address-strong,
 .info__phone {
-  color: #2d3440;
+  color: $basic-extra-dark;
   margin: 0;
   font-weight: 700;
   font-size: 20px;
@@ -73,7 +73,7 @@ img {
 }
 
 .info__time {
-  color: #565c66;
+  color: $basic-dark;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
@@ -82,12 +82,12 @@ img {
 
 .contacts__button {
   text-decoration: none;
-  color: #fcfcfc;
+  color: $basic-extra-light;
   line-height: 20px;
   display: block;
   width: 250px;
   height: 44px;
-  background-color: #ff2f64;
+  background-color: $special-extra-bright;
   border-radius: 26px;
   text-align: center;
   box-sizing: border-box;
