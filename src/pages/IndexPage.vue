@@ -6,6 +6,17 @@ import AboutUsComponent from "../components/AboutUsComponent.vue";
 import SubscribeComponent from "../components/SubscribeComponent.vue";
 import DeliveryComponent from "../components/DeliveryComponent.vue";
 import ContactsComponent from "../components/ContactsComponent.vue";
+import { ref, onMounted } from "vue";
+
+const indexData = ref({});
+
+onMounted(async () => {
+  const response = await fetch("api/index.json");
+  const data = await response.json();
+  indexData.value = data;
+
+  console.log(indexData.value);
+});
 </script>
 
 <template>
@@ -13,7 +24,7 @@ import ContactsComponent from "../components/ContactsComponent.vue";
     <PromoSliderComponent />
     <GiftsComponent />
     <VariantsComponent />
-    <AboutUsComponent />
+    <AboutUsComponent :aboutData="indexData" />
     <SubscribeComponent />
     <DeliveryComponent />
     <ContactsComponent />

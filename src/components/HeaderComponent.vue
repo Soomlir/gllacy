@@ -5,7 +5,6 @@ const flagSubmenu = ref(false);
 const toggleShowSubMenu = () => {
   flagSubmenu.value = !flagSubmenu.value;
 };
-console.log(flagSubmenu.value);
 </script>
 
 <template>

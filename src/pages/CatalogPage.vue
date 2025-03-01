@@ -33,6 +33,62 @@ const variantsData = [
     price: 320,
     imgSrc: "product-4.png",
   },
+  {
+    id: 5,
+    heading: "Ежевика",
+    text: `Сливочное мороженое <br> с ежевичным джемом`,
+    price: 330,
+    imgSrc: "product-5.png",
+  },
+  {
+    id: 6,
+    heading: "Банан",
+    text: `Сливочный пломбир <br> с банановым вкусом`,
+    price: 340,
+    imgSrc: "product-6.png",
+  },
+  {
+    id: 7,
+    heading: "Шоколадка",
+    text: `Классический <br> шоколадный пломбир`,
+    price: 270,
+    imgSrc: "product-7.png",
+  },
+  {
+    id: 8,
+    heading: "Клубничка",
+    text: `Сливочный пломбир <br> с клубничным вкусом`,
+    price: 300,
+    imgSrc: "product-8.png",
+  },
+  {
+    id: 9,
+    heading: "Лимон",
+    text: `Освежающий <br> лимонный сорбет`,
+    price: 310,
+    imgSrc: "product-9.png",
+  },
+  {
+    id: 10,
+    heading: "Ментол",
+    text: `Сливочный пломбир <br> с ментоловым сиропом`,
+    price: 320,
+    imgSrc: "product-10.png",
+  },
+  {
+    id: 11,
+    heading: "Орешек",
+    text: `Фисташковый пломбир <br> с шоколадным сиропом`,
+    price: 360,
+    imgSrc: "product-11.png",
+  },
+  {
+    id: 12,
+    heading: "Крем-брюле",
+    text: `Классическое <br> крем-брюле `,
+    price: 280,
+    imgSrc: "product-12.png",
+  },
 ];
 </script>
 
@@ -107,6 +163,7 @@ const variantsData = [
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -118,6 +175,7 @@ const variantsData = [
   border-radius: 8px;
   padding-top: 133px;
   box-sizing: border-box;
+  margin-bottom: 62px;
 }
 
 .catalog__image {

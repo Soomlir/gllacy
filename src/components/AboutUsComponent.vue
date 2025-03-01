@@ -1,31 +1,6 @@
 <script setup>
-const aboutData = [
-  {
-    id: 1,
-    text: `Всё наше мороженое изготавливается на собственном производстве
-         с использованием современного оборудования и проверенных временем технологий.`,
-    image: `icecream`,
-  },
-  {
-    id: 2,
-
-    text: `Закупка ингредиентов производится только <br> у проверенных фермерских хозяйств, с которыми <br>
-         нас связывает долговременное сотрудничество.`,
-    image: `cow`,
-  },
-  {
-    id: 3,
-    text: `Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
-         <br> и добавки произведены из натурального сырья.`,
-    image: `list`,
-  },
-  {
-    id: 4,
-    text: `Доставка нашего мороженого осуществляется в специальном термопаке,
-         который не даёт мороженому растаять и позволяет сохранить превосходный вкус.`,
-    image: `term`,
-  },
-];
+const props = defineProps(['aboutData'])
+// console.log(props);
 </script>
 
 <template>
@@ -39,7 +14,7 @@ const aboutData = [
       <ul class="about__list">
         <li
           class="about__item"
-          v-for="{ id, text, image } in aboutData"
+          v-for="{ id, text, image } in props.aboutData.aboutData"
           :key="id"
         >
           <p :class="`about__text about__text--${image}`" v-html="text"></p>
