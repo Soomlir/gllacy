@@ -1,6 +1,5 @@
 <script setup>
-const props = defineProps(['aboutData'])
-// console.log(props);
+const props = defineProps(['aboutData']);
 </script>
 
 <template>
@@ -14,7 +13,7 @@ const props = defineProps(['aboutData'])
       <ul class="about__list">
         <li
           class="about__item"
-          v-for="{ id, text, image } in props.aboutData.aboutData"
+          v-for="{ id, text, image } in aboutData"
           :key="id"
         >
           <p :class="`about__text about__text--${image}`" v-html="text"></p>

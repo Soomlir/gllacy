@@ -14,19 +14,19 @@ onMounted(async () => {
   const response = await fetch("api/index.json");
   const data = await response.json();
   indexData.value = data;
-
-  console.log(indexData.value);
 });
 </script>
 
 <template>
-  <main class="main">
-    <PromoSliderComponent />
-    <GiftsComponent />
-    <VariantsComponent />
-    <AboutUsComponent :aboutData="indexData" />
-    <SubscribeComponent />
-    <DeliveryComponent />
-    <ContactsComponent />
+  <main class="nain">
+    <template v-if="indexData.promoGoods">
+      <PromoSliderComponent :slides="indexData.promoGoods" />
+      <GiftsComponent :giftsData="indexData.giftsData" />
+      <VariantsComponent :variantsData="indexData.variantsData"/>
+      <AboutUsComponent :aboutData="indexData.aboutData" />
+      <SubscribeComponent />
+      <DeliveryComponent />
+      <ContactsComponent />
+    </template>
   </main>
 </template>

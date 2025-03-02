@@ -2,42 +2,12 @@
 import { IMAGE_DIR } from '@/lib/constants';
 import SocialComponent from './SocialComponent.vue';
 
-const sliderData = [
-  // {
-  //     id: 1,
-  //     heading: `Нежный пломбир с клубничным джемом`,
-  //     text: `Натуральное мороженое из свежих сливок
-  //                 и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. `,
-  //     img: {
-  //         src: 'promo-slide-1.png',
-  //         width: '328px',
-  //         height: '507px',
-  //         alt: 'Нежный пломбир с клубничным джемом.',
-  //     }
-  // },
-  // {
-  //     id: 2,
-  //     heading: `Сливочное мороженое со вкусом банана`,
-  //     text: `Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.`,
-  //     img: {
-  //         src: 'promo-slide-2.png',
-  //         width: '312px',
-  //         height: '507px',
-  //         alt: 'Сливочное мороженое со вкусом банана.',
-  //     }
-  // },
-  {
-    id: 3,
-    heading: `Карамельный пломбир с маршмеллоу`,
-    text: `Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов. `,
-    img: {
-      src: "promo-slide-3.png",
-      width: "350px",
-      height: "507px ",
-      alt: "Карамельный пломбир с маршмеллоу. ",
-    },
+const props = defineProps({
+  slides: {
+    type: Array,
+    default: () => [],
   },
-];
+});
 </script>
 
 <template>
@@ -46,7 +16,7 @@ const sliderData = [
     <ul class="promo__slider">
       <li
         class="promo__item"
-        v-for="{ id, heading, text, img } in sliderData"
+        v-for="{ id, heading, text, img } in slides.slice(2)"
         :key="id"
       >
         <div class="promo__info">

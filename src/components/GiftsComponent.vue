@@ -1,22 +1,12 @@
 <script setup>
 import { IMAGE_DIR } from '@/lib/constants';
 
-const giftsData = [
-  {
-    id: 1,
-    heading: "Малинка даром!",
-    text: `При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.`,
-    src: "gift-1.png",
-    alt: "Малинка даром!",
+const props = defineProps({
+  giftsData: {
+    type: Array,
+    default: () => [],
   },
-  {
-    id: 2,
-    heading: "Маршмеллоу даром!",
-    text: `При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных зефирок совершенно бесплатно.`,
-    src: "gift-2.png",
-    alt: "Маршмеллоу даром!",
-  },
-];
+});
 </script>
 
 <template>

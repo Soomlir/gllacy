@@ -5,6 +5,14 @@ const flagSubmenu = ref(false);
 const toggleShowSubMenu = () => {
   flagSubmenu.value = !flagSubmenu.value;
 };
+
+const subMenu = [
+  {id: 1, text: "Новинки"},
+  {id: 2, text: "Сливочное"},
+  {id: 3, text: "Щербеты"},
+  {id: 4, text: "Фруктовый лед"},
+  {id: 5, text: "Мелорин" }
+]
 </script>
 
 <template>
@@ -30,20 +38,8 @@ const toggleShowSubMenu = () => {
           class="header__submenu submenu"
           :class="{ 'submenu-show': flagSubmenu }"
         >
-          <li class="submenu__item">
-            <a class="submenu__link" href="#!">Новинки</a>
-          </li>
-          <li class="submenu__item">
-            <a class="submenu__link" href="#!">Сливочное</a>
-          </li>
-          <li class="submenu__item">
-            <a class="submenu__link" href="#!">Щербеты</a>
-          </li>
-          <li class="submenu__item">
-            <a class="submenu__link" href="#!">Фруктовый лед</a>
-          </li>
-          <li class="submenu__item">
-            <a class="submenu__link" href="#!">Мелорин</a>
+          <li class="submenu__item" v-for="item in subMenu" :key="item.id">
+            <a class="submenu__link" href="#!">{{ item.text }}</a>
           </li>
         </ul>
       </li>
