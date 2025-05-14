@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-init commit
+  <RouterView />
 </template>
 
 <style scoped>

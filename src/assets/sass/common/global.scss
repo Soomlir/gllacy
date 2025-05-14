@@ -1,0 +1,12 @@
+@use "@/assets/sass/common/variables" as *;
+
+body {
+  margin: 0;
+  font-family: "Inter", "Arial", sans-serif;
+  background-color: $yellow-bg-page;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

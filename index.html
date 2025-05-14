@@ -1,12 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sass/main.css" />
     <title>Gllacy - main</title>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      window.pixelperfect = {
+        breakpoints: [1366],
+        folder: "img/pixelperfect",
+      };
+    </script>
+    <script
+      src="https://efiand.github.io/pixelperfect-tool/pixelperfect.min.js"
+      defer
+    ></script>
   </body>
 </html>
